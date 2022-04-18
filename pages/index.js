@@ -9,7 +9,6 @@ import AppContext from "../context/AppContext"
 const HomePage = ()=>{
 
     const { isOnGlobal } = useContext(AppContext)
-    getData()
     return(
         <>
             <ShowCards />
