@@ -1,0 +1,966 @@
+
+body{
+  font-family: 'Montserrat';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background:#374F8C;
+}
+
+
+.NavBar{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.NavBar__Hover{
+  width: 0;
+  height: 100%;
+}
+
+.NavBar__Logo{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavBar__Logo-Image{
+  width: 50px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.NavBar__Logo-String{
+  font-weight: 600;
+  font-size: 23px;
+  color: #FFF;
+}
+
+.NavBar__SocialMediaContainer{
+  width: 20%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavBar__SocialMediaContainer-Github{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.NavBar__SocialMediaContainer-LinkedIn{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.fa-github{
+  color: #FFF;
+  margin-right: 10px;
+}
+
+.SocialMedia-Link{
+  width: 10px;
+}
+
+.fa-github:hover{
+  color: #171F3B;
+  cursor: pointer;
+}
+
+
+.NavBar__SocialMediaContainer-Github-Text{
+  color: white;
+  font-weight: 600;
+  display: none;
+}
+
+.fa-linkedin{
+  color: #FFF;
+  margin-right: 10px;
+}
+
+.fa-linkedin:hover{
+  color: #171F3B;
+  cursor: pointer;
+}
+
+.NavBar__SocialMediaContainer-LinkedIn-Text{
+  color: white;
+  font-weight: 600;
+  display: none;
+}
+
+.showCards{
+  display: flex;
+  display: none;
+  width: 100%;
+  height: 50px;
+  justify-content: space-around;
+  align-items: center;
+  background: #4B6CB7;
+}
+
+.showCards__String{
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  width: 250px;
+}
+
+
+.tableContainer{
+  margin: 10px auto ;
+  width: 90%;
+}
+
+.tableContainer__Body{
+  width: 100%;
+  height: 100%;
+}
+
+.tableContainer__Header{
+  font-weight: bold;
+  font-size: 18px;
+  color: #2A4788;
+  background: white;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.tableContainer__Header-Hash{
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  width: 50%;
+}
+
+.tableContainer__LeftInfo{
+  display: none;
+}
+
+.tableContainer__RightInfo{
+  width: 100%;
+  display: flex;
+}
+
+.tableContainer__Header-Time{
+  width: 16.6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableContainer__Header-AmountBTC{
+  width: 16.6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableContainer__Header-AmountUSD{
+  width: 16.6%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tableContainer__Container-Rows{
+  width: 100%;
+  height: auto;
+  margin-top: 1%;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.tableContainer__Row{
+  background: rgba(75, 108, 183, 0.56);
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+
+.tableContainer__Row-Hash{
+  display: flex;
+  padding-left: 10px;
+  flex-direction: center;
+  align-items: center;
+  width: 50%;
+  font-size: 1rem;  
+}
+
+.tableContainer__Row-Hash-Value{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.tableContainer__Row-Time{
+  width: 16.6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 1rem;  
+
+}
+
+.tableContainer__Row-AmountBTC{
+  width: 16.6%;
+  display: flex;
+  color: #FFF;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;  
+
+}
+
+.tableContainer__Row-AmountUSD{
+  width: 16.6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-size: 1rem;  
+
+}
+
+.transactionCardsContainer{
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.transactionCard, .topOneNFTCard{
+  transition: .7s;
+  width: 28%;
+  height: 200px;
+  background-color: white;
+  border-radius: 5px;
+  background: #4B6CB7;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.transactionCard--Hide, .topOneNFTCard--Hide{
+  
+  transition: .9s;
+}
+
+.transactionCard--Higuest{
+  transition: .5s;
+  height: 500px;
+}
+
+.fa-arrow-alt-circle-up{
+  margin-right: 5px;
+}
+
+.transactionCard__Title{
+  text-align: center;
+  width: 90%;
+  background: white;
+  color: #2A4788;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.transactionCard__mainInfo{
+  width: 90%;
+  height: 30%;
+  transition: .5s;
+  display: flex;
+  justify-content: space-around;
+}
+
+.transactionCard__mainInfo--Higuest{
+  height: 70%;
+  transition: .5s;
+  flex-direction: column;
+}
+
+
+
+.transactionCard__mainInfo-Time{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+}
+
+.transactionCard__mainInfo-Hash, .transactionCard__mainInfo-Status, .transactionCard__mainInfo-Confirmations{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+  height: 100%;
+}
+
+.transactionCard__mainInfo-Hash, .transactionCard__mainInfo-Status, .transactionCard__mainInfo-Confirmations{
+  display: none;
+}
+
+.transactionCard__mainInfo-Time--Higuest{
+  display: flex;
+  width: 100%;
+  height: 16.6%;
+  flex-direction: row;
+}
+
+.transactionCard__mainInfo-Hash--Higuest{
+  display: flex;
+  width: 100%;
+  height: 16.6%;
+  flex-direction: row;
+}
+
+.transactionCard__mainInfo-Status--Higuest, 
+.transactionCard__mainInfo-Confirmations--Higuest{
+  display: flex;
+  width: 100%;
+  height: 16.6%;
+  flex-direction: row;
+}
+
+.transactionCard__mainInfo-Hash-String, 
+.transactionCard__mainInfo-Status-String, 
+.transactionCard__mainInfo-Confirmations-String{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.transactionCard__mainInfo-Hash-Value, 
+.transactionCard__mainInfo-Status-Value, 
+.transactionCard__mainInfo-Confirmations-Value{
+  width: 50%;
+  padding-left: 10px;
+  overflow: hidden;
+  justify-content: center;
+  display: flex;
+}
+
+.transactionCard__mainInfo-Time-String{
+  font-weight: bold;
+  font-size: 1rem;
+
+}
+
+.transactionCard__mainInfo-Time-Value{
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+
+.transactionCard__mainInfo-AmountBTC{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 37%;
+  height: 100%;
+}
+
+.transactionCard__mainInfo-AmountBTC--Higuest{
+  width: 100%;
+  height: 16.6%;
+  flex-direction: row;
+}
+
+.transactionCard__mainInfo-AmountBTC-String{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.transactionCard__mainInfo-AmountBTC-Value{
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.transactionCard__mainInfo-AmountUSD{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 37%;
+  height: 100%;
+}
+
+.transactionCard__mainInfo-AmountUSD--Higuest{
+  width: 100%;
+  height: 16.6%;
+  flex-direction: row;
+}
+
+.transactionCard__mainInfo-AmountUSD-String{
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.transactionCard__mainInfo-AmountUSD-Value{
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+.transactionCard__btnMoreDetail{
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 15px;
+  background:#2A4788;
+  font-weight: 700;
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.transactionCard__Icon{
+    margin-left: 10px;
+}
+
+.transactionCard__btnMoreDetail--Higuest{
+  width: 30%;
+  height: 50%;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.transactionCard__btnMoreDetail:hover{
+  cursor: pointer;
+  transition: .5s;
+  background:#1b2f5a;
+}
+
+.fa-eye{
+  margin-left: 5px;
+}
+
+
+.transactionCard__ContainerButtons{
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.transactionCard__btnGoToBlockChain{
+  border-radius: 5px;
+  padding: 15px 35px;
+  font-size: 15px;
+  background:#2A4788;
+  font-weight: 700;
+  transition: .5s;
+  display: none;
+}
+
+.transactionCard__btnGoToBlockChain--Higuest{
+  display: flex;
+  width: 30%;
+  height: 50%;
+  padding: 10px 25px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.transactionCard__btnGoToBlockChain a{
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+
+.topOneNFTCard__containerInfo{
+  width: 90%;
+  height: 30%;
+  display: flex;
+}
+
+.topOneNFTCard__containerInfo--Higuest{
+  height: 70%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topOneNFTCard__image{
+  width: 30%;
+  height: 100%;
+}
+
+.topOneNFTCard__image--Higuest{
+  width: 70%;
+  height: 50%;
+  margin-bottom: 8px;
+}
+
+
+.topOneNFTCard__image img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.topOneNFTCard__mainInfoContainer{
+  width: 90%;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+
+}
+
+.topOneNFTCard__mainInfoContainer-TitleContainer{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.topOneNFTCard__mainInfoContainer-TitleContainer--Higuest{
+  flex-direction: column;
+}
+
+.topOneNFTCard__mainInfoContainer-Title{
+  font-size: 15px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.topOneNFTCard__mainInfoContainer-Values{
+  width: 100%;
+  height: 68%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.topOneNFTCard__mainInfoContainer-Values-Left-Floor,
+.topOneNFTCard__mainInfoContainer-Values-Left-LastSale,
+.topOneNFTCard__mainInfoContainer-Values-Left-Creator,
+.topOneNFTCard__mainInfoContainer-Values-Left-Owner,
+.topOneNFTCard__mainInfoContainer-Values-Left-Collection,
+.topOneNFTCard__mainInfoContainer-Values-Right-Floor,
+.topOneNFTCard__mainInfoContainer-Values-Right-LastSale,
+.topOneNFTCard__mainInfoContainer-Values-Right-Creator,
+.topOneNFTCard__mainInfoContainer-Values-Right-Owner,
+.topOneNFTCard__mainInfoContainer-Values-Right-Collection{
+  display: none;
+}
+
+.topOneNFTCard__mainInfoContainer-Values-Left-Price--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Left-Value--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Left-Floor--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Left-LastSale--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Left-Creator--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Left-Owner--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Left-Collection--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Right-Price--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Right-Value--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Right-Floor--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Right-LastSale--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Right-Creator--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Right-Owner--Higuest,
+.topOneNFTCard__mainInfoContainer-Values-Right-Collection--Higuest{
+  display: flex;
+}
+
+
+.topOneNFTCard__mainInfoContainer-Values-Left-Price--Higuest p{
+  font-size: 18px;
+}
+
+
+.topOneNFTCard__mainInfoContainer-Values-Left,
+.topOneNFTCard__mainInfoContainer-Values-Right {
+  width: 35%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.topOneNFTCard__mainInfoContainer-Values-Left{
+  justify-content: center;
+  align-items: center;
+} 
+
+.topOneNFTCard__mainInfoContainer-Values-Left--Higuest{
+  align-items: flex-start;
+}
+
+
+.topOneNFTCard__mainInfoContainer-Values-Right{
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+} 
+
+.topOneNFTCard__mainInfoContainer-Values-Left p,
+.topOneNFTCard__mainInfoContainer-Values-Right p{
+  margin: 0;
+  padding: 1px;
+  font-size: 10px;
+}
+
+.topOneNFTCard__mainInfoContainer-Values-Left p{
+  font-weight: 600;
+  font-size: 11px;
+}
+
+.arrowDown{
+  transform: rotate(90deg);
+  transition: .5s;
+}
+
+.arrowDown--Hide{
+  transform: rotate(-90deg);
+  transition: .5s;
+}
+
+
+
+@media (max-width: 1220px){
+
+  .transactionCard{
+    margin-bottom: 10px;
+  }
+
+  .tableContainer__Row-Hash, 
+  .tableContainer__Row-Time, 
+  .tableContainer__Row-AmountBTC, 
+  .tableContainer__Row-AmountUSD{
+    font-size: .8rem;  
+  }  
+}
+
+@media (max-width: 1120px){
+
+  .transactionCard__Title{
+    font-size: .9rem;
+  }
+  
+  .transactionCard__mainInfo-Time-String,
+  .transactionCard__mainInfo-AmountBTC-String, 
+  .transactionCard__mainInfo-AmountUSD-String{
+    font-size: .8rem;
+  }
+
+  .transactionCard__mainInfo-Time-Value, 
+  .transactionCard__mainInfo-AmountBTC-String, 
+  .transactionCard__mainInfo-AmountUSD-String{
+    font-size:.7rem;
+  }
+
+}
+
+@media (max-width: 1038px){
+
+  .transactionCard{
+    background: rgba(222, 230, 250, 0.19);
+  }
+
+  .topOneNFTCard{
+    background: rgba(222, 230, 250, 0.19); 
+  }
+
+  .showCards{
+    display: flex;
+  }
+
+  .arrowDown{
+    cursor: pointer;
+  }
+  
+  .NavBar__Logo-String{
+    font-size: 1rem;
+  }
+
+
+  .transactionCardsContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #4B6CB7;
+    max-height: 7034px;
+    transition: .5s;
+
+  }
+
+  
+
+  .transactionCardsContainer--Hide{
+    transition: .5s;
+    animation-name: transactionHide;
+    transform: translateX(-1500px);
+    animation-delay: .2s;
+    animation-duration: .8s;
+    animation-fill-mode:forwards;
+  }
+
+
+  @keyframes transactionHide {
+    0% {
+      height: 790px;
+    }
+    50%{
+      height: 350px;
+    }
+    100% {
+      background: red;
+      height: 0px;
+    }
+  }
+
+
+  .transactionCard__mainInfo-Time-String, 
+  .transactionCard__mainInfo-AmountBTC-String, 
+  .transactionCard__mainInfo-AmountUSD-String{
+    font-size: 1rem;
+  }
+
+  .topOneNFTCard__mainInfoContainer-Title{
+    font-size: 1em;
+  }
+
+  .transactionCard__mainInfo-Time-Value{
+    font-size: 1rem;
+  }
+
+  .transactionCard, .topOneNFTCard{
+    width: 70%;
+  }
+
+}
+
+@media (max-width: 986px){
+  
+  
+  .tableContainer__Header-Hash, 
+  .tableContainer__Header-Time, 
+  .tableContainer__Header-AmountBTC, 
+  .tableContainer__Header-AmountUSD{
+    font-size: 1rem;
+  }
+
+
+  .tableContainer__Row-Hash, 
+  .tableContainer__Row-Time, 
+  .tableContainer__Row-AmountBTC, 
+  .tableContainer__Row-AmountUSD{
+    font-size: .7rem;  
+  } 
+
+}
+
+@media (max-width: 864px){
+  
+  .tableContainer__Header-Hash, 
+  .tableContainer__Header-Time, 
+  .tableContainer__Header-AmountBTC, 
+  .tableContainer__Header-AmountUSD{
+    font-size: .8rem;
+  }
+
+
+  .tableContainer__Row-Hash, 
+  .tableContainer__Row-Time, 
+  .tableContainer__Row-AmountBTC, 
+  .tableContainer__Row-AmountUSD{
+    font-size: .6rem;  
+  } 
+
+}
+
+@media (max-width: 748px){
+  
+  .tableContainer__Header-Hash, 
+  .tableContainer__Header-Time, 
+  .tableContainer__Header-AmountBTC, 
+  .tableContainer__Header-AmountUSD{
+    font-size: .7rem;
+  }
+
+
+  .tableContainer__Row-Hash, 
+  .tableContainer__Row-Time, 
+  .tableContainer__Row-AmountBTC, 
+  .tableContainer__Row-AmountUSD{
+    font-size: .5rem;  
+  } 
+
+}
+
+@media(max-width:694px){
+  .transactionCard__mainInfo-Time-String,
+  .transactionCard__mainInfo-AmountBTC-String, 
+  .transactionCard__mainInfo-AmountUSD-String{
+    font-size: .8rem;
+  }
+
+  .transactionCard__mainInfo-Time-Value, 
+  .transactionCard__mainInfo-AmountBTC-String, 
+  .transactionCard__mainInfo-AmountUSD-String{
+    font-size:.7rem;
+  }
+}
+
+@media (max-width: 644px){
+
+  .NavBar__Logo{
+    width: 70%;
+  }
+
+
+  
+  .NavBar__Logo-String{
+    font-size: .7rem;
+  }
+
+    
+
+}
+
+@media(max-width:394px){
+  .NavBar__Logo-Image{
+    display: none;
+  }
+
+  .fa-github, .fa-linkedin{
+    font-size: 25px;
+  }
+
+  .transactionCard{
+    width: 350px;
+  }
+
+  .topOneNFTCard{
+    width: 350px;
+  }
+  
+
+}
+
+@media (max-width: 618px){
+
+  .transactionCard{
+    background: rgba(222, 230, 250, 0.19);
+  }
+
+  .topOneNFTCard{
+    background: rgba(222, 230, 250, 0.19); 
+  }
+  
+ .tableContainer__Header{
+   display: none;
+ }
+
+ .tableContainer__Row{
+   height: auto;
+   margin-bottom: 5px;
+   border-radius: 5px;
+ }
+
+ .tableContainer__LeftInfo{
+   display: flex;
+   width: 80px;
+   height: 100px;
+   flex-direction: column;
+  }
+
+
+  .tableContainer__RightInfo{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+   }
+
+
+
+  .tableContainer__Row-Hash-String, 
+  .tableContainer__Row-Time-String, 
+  .tableContainer__Row-AmountBTC-String, 
+  .tableContainer__Row-AmountUSD-String{
+    font-size:10px;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    padding-left: 2px;
+    font-weight: 500;
+    color: #FFF;
+  }
+
+  
+  .tableContainer__Row-Hash,
+  .tableContainer__Row-Time,
+  .tableContainer__Row-AmountBTC,
+  .tableContainer__Row-AmountUSD{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
+
+@media(max-width:256px){
+
+  .NavBar__SocialMediaContainer{
+    width: 50px;
+  }
+
+  .NavBar__Logo-String{
+    font-size: .6rem;
+  }
+
+  .fa-github, .fa-linkedin{
+    font-size: 20px;
+  }
+
+
+
+}
+
+@media(max-width:360px){
+  .transactionCard{
+    width: 350px;
+  }
+
+  .topOneNFTCard{
+    width: 350px;
+  }
+}
+
+
+
