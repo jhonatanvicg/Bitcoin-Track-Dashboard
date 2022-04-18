@@ -4,7 +4,6 @@ import TopOneNFTDay from "../components/TopOneNFTDay"
 import ShowCards from "../components/showCards"
 import Table from "../containers/Table"
 import AppContext from "../context/AppContext"
-import getData from "../hook/useScrapping"
 
 
 const HomePage = ()=>{
